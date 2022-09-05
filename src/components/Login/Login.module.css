@@ -1,0 +1,13 @@
+.loginContainer {
+    width: 90%;
+    border: 1px solid #E7E8EA;
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.loginContainer button {
+    font-family: 'Poppins', serif;
+    color: #3B4153;
+}

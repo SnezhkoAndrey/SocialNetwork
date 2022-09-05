@@ -1,0 +1,12 @@
+.postsBlock {
+  padding: 10px;
+}
+
+.posts {
+  margin-top: 10px;
+}
+
+.postButton button {
+  font-family: 'Poppins', serif;
+  color: #3B4153;
+}

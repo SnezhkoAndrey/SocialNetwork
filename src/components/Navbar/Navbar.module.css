@@ -1,0 +1,26 @@
+.nav {
+  grid-area: nav;
+  background-color: #E5E5E5;
+  padding: 20px;
+  }
+
+.item {
+  display: flex;
+  margin: 10px;
+  align-items: center;
+}
+
+.item img {
+  width: 20px;
+  height: 20px;
+}
+
+.item a {
+  color: #3B4153;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.item a.active {
+  color: #038cc2b6;
+}

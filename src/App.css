@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,25 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+
+.app-wrapper {
+  display: grid;
+  width: 1200px;
+  margin: 0 auto;
+  font-family: 'Poppins', serif;
+  color: #3B4153;
+
+  grid-template-areas: 
+  "header header"
+  "nav content";
+
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 2fr 10fr;
+}
+
+.app-wrapper-content {
+  grid-area: content;
+  background-color: #E5E5E5;
 }

@@ -1,0 +1,55 @@
+.findUsers {
+    width: 90%;
+    border: 1px solid #E7E8EA;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.findUsers .findUsersItem {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.selectedPage:hover {
+    cursor: pointer;
+}
+
+.userPhoto {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.userAvatar {
+    margin: 20px;
+    width: 20%;
+    text-align: center;
+}
+
+.userFollow button {
+    padding: 10px 30px;
+    font-family: 'Poppins', serif;
+    color: #3B4153;
+}
+
+.userInfo {
+    margin: 20px;
+    width: 500px;
+    height: 80px;
+    display: flex;
+    border: 1px solid #3B4153;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+
+.userText {
+    margin: 10px;
+    color: #3B4153;
+    font-weight: bold;
+}
+
+.userName, .userCityname {
+    margin-bottom: 20px;
+}

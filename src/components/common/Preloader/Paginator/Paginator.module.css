@@ -1,0 +1,25 @@
+.paginator {
+    margin: 10px;
+    text-align: center;
+}
+
+.paginator button {
+    font-family: 'Poppins', serif;
+    color: #3B4153;
+}
+
+.pageNumber {
+    display: inline-block;
+    width: 20px;
+    padding: 2px;
+    border: 1px solid #3B4153;
+    border-radius: 8px;
+}
+.pageNumber:hover {
+    cursor: pointer;
+}
+
+.pageNumber.selectedPage {
+    font-weight: bold;
+    background-color: #9b9b9b50;
+}
