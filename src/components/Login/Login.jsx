@@ -18,7 +18,8 @@ const Login = (props) => {
 
             <LoginForm 
                 login={props.login}
-                messages={props.messages} />
+                messages={props.messages}
+                captchaUrl={props.captchaUrl} />
         </div>
    )
 }
@@ -29,12 +30,13 @@ const LoginForm = (props) => {
             initialValues={{
                email: "",
                password: "",
-               rememberMe: false
+               rememberMe: false,
+               captcha: null,
             }}
             validate={validateLoginForm}
             validationSchema={validationSchemaLoginForm}
             onSubmit={(values) => {
-               props.login( values.email, values.password, values.rememberMe )
+               props.login( values.email, values.password, values.rememberMe, values.captcha )
             }}
          >
             {() => (
@@ -57,6 +59,15 @@ const LoginForm = (props) => {
                   </div>
                   <ErrorMessage name="password" component={ErrorForm} />
                     <div className={s.errorForm}>{props.messages}</div>
+                    {props.captchaUrl && <img src={props.captchaUrl} />}
+                    {props.captchaUrl && 
+                    <div>
+                    <Field
+                       name={'captcha'}
+                       type={'text'}
+                       placeholder={'captcha'}
+                       component={Input} />
+                 </div>}
                   <div>
                      <Field
                         type={'checkbox'}
@@ -75,6 +86,7 @@ const LoginForm = (props) => {
 const mapStateToProps = (state) => ({
     isAuth:state.auth.isAuth,
     messages: state.auth.messages,
+    captchaUrl: state.auth.captchaUrl,
 })
 
 export default connect (mapStateToProps, {login}) (Login);

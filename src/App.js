@@ -12,7 +12,7 @@ import { connect } from "react-redux";
 import { initializeApp } from "./redux/app-reducer";
 import Preloader from "./components/common/Preloader/Preloader";
 import store from "./redux/redux-store";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import { Provider } from "react-redux";
 
 // import DialogsContainer from "./components/Dialogs/DialogsContainer";
@@ -74,11 +74,11 @@ let AppContainer = connect(mapStateToProps, { initializeApp })(App);
 
 const MainApp = (props) => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Provider store={store}>
         <AppContainer />
       </Provider>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 

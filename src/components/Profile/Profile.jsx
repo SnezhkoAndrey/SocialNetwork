@@ -7,7 +7,7 @@ import MyPostsContainer from './MyPosts/MyPostsContainer';
 const Profile = React.memo((props) => {
     return (
       <div className={s.profileBlock}>
-        <ProfileInfo profile={props.profile} status={props.status} updateStatus={props.updateStatus} />
+        <ProfileInfo savePhoto={props.savePhoto} isOwner={props.isOwner} profile={props.profile} status={props.status} updateStatus={props.updateStatus} updateProfileInfo={props.updateProfileInfo} />
         <MyPostsContainer />
       </div>
     );
